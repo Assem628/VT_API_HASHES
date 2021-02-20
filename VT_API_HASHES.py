@@ -20,7 +20,7 @@ with open('vtresults.csv','w',newline='') as d:
             while True:
 
                 if count <=3:
-                    params = {'apikey':'18f2522ef7c957a00a8391206c4144ec4a71af83a6d24780c8e6fa36c4df606b', 'resource':row_}
+                    params = {'apikey':'API_KEY', 'resource':row_}
                     response = requests.get(url, params=params)
 
                     if(response.status_code == 200):
